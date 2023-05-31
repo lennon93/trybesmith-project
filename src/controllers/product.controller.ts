@@ -9,7 +9,7 @@ async function addProduct(req: Request, res: Response): Promise<Response> {
 
 async function getProducts(req: Request, res: Response): Promise<Response> {
   const allProducts = await productService.getProducts();
-  return res.status(201).json(allProducts);
+  return res.status(200).json(allProducts);
 }
 
 export default {
