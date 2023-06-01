@@ -1,5 +1,5 @@
 import { Order } from '../types/Order';
-import OrderModel from '../database/models/order.model';
+import OrderModel, { OrderInputtableTypes } from '../database/models/order.model';
 import ProductModel from '../database/models/product.model';
 
 async function getOrders(): Promise<Order[]> {
@@ -23,11 +23,13 @@ async function getOrders(): Promise<Order[]> {
   return ordersValues;
 }
 
-// async function addOrder(product: OrderInputtableTypes): Promise<Order> {
-//   const newProduct = await ProductModel.create(product);
-//   return newProduct.dataValues;
-// }
+async function addOrder(order: OrderInputtableTypes): Promise<OrderInputtableTypes> {
+  await OrderModel.create(order);
+  
+  return order;
+}
 
 export default {
   getOrders,
+  addOrder,
 };
