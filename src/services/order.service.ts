@@ -23,6 +23,11 @@ async function getOrders(): Promise<Order[]> {
   return ordersValues;
 }
 
+// async function addOrder(product: OrderInputtableTypes): Promise<Order> {
+//   const newProduct = await ProductModel.create(product);
+//   return newProduct.dataValues;
+// }
+
 export default {
   getOrders,
 };
