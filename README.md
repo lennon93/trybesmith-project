@@ -1,5 +1,8 @@
 ## Trybesmith Project
 
+![TrybeSmith](https://cronicasrpg.com.br/wp-content/uploads/2015/07/Armas2.jpg)
+
+
 ### Proposta Apresentada: 
 
 Esse projeto é uma API de criação e gerenciamento de pedidos, produtos e seus respectivos usuarios. 
